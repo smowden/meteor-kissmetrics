@@ -1,0 +1,9 @@
+{
+    "name": "kissmetrics",
+    "description": "Easy Kissmetrics integration for Meteor",
+    "homepage": "https://github.com/smowden/meteor-kissmetrics",
+    "author": "Christian Smorra",
+    "version": "0.1.0",
+    "git": "https://github.com/smowden/meteor-kissmetrics.git",
+    "packages": {}
+}
