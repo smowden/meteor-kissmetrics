@@ -33,3 +33,5 @@ submit an event to Kissmetrics called "Login App".
 [Kissmetrics docs](http://support.kissmetrics.com/apis/javascript/index.html)
 
 #### Pull requests welcome
+
+Developed by [flowkey](http://www,flowkey.com)
