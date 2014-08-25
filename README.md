@@ -34,4 +34,4 @@ submit an event to Kissmetrics called "Login App".
 
 #### Pull requests welcome
 
-Developed by [flowkey](http://www,flowkey.com)
+Developed by [flowkey](http://www.flowkey.com)
