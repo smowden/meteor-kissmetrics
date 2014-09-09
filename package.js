@@ -7,7 +7,7 @@ Package.describe({
 
 Package.on_use(function (api) {
   api.versionsFrom("METEOR@0.9.0");
-    api.use('tracker');
+    api.use('tracker@1.0.0');
     api.use('accounts-base');
     api.use('underscore');
     api.add_files(['kissmetrics.js'], 'client');
