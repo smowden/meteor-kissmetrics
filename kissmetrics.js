@@ -1,4 +1,5 @@
-_kmq = window._kmq || [];
+window._kmq = [];
+_kmq = window._kmq;
 
 
 var load = function (u){
@@ -12,9 +13,9 @@ var load = function (u){
 };
 
 
-function kmHandler(){
+function KmHandler(){
     var ready = false;
-    var dep = new Deps.Dependency;
+    var dep = new Tracker.Dependency;
     this.onLoad = function(){
         ready = true;
         dep.changed();
@@ -25,7 +26,7 @@ function kmHandler(){
     }
 }
 
-var kmReactive = new kmHandler();
+var kmReactive = new KmHandler();
 
 
 
@@ -38,9 +39,8 @@ if(Meteor.settings && Meteor.settings.public !== undefined && Meteor.settings.pu
     load('//doug1izaerwt3.cloudfront.net/' + Meteor.settings.public.kissmetrics.key + '.1.js');
     _kmq.push(kmReactive.onLoad);
 
-
-    Deps.autorun(function () {
-        if(kmReactive.isReady()) _kmq = window._kmq;
+    Tracker.autorun(function () {
+        if(kmReactive.isReady()) _kmq.push = window._kmq.push;
 
 
         if(Meteor.settings.public.kissmetrics.autoIdentify === true){
